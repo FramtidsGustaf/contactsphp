@@ -1,15 +1,15 @@
 <?php
 
+require_once "DB.php";
 class Read
 {
-  private $stmt;
+
   private $result;
 
-  public function __construct($conn)
+  public function __construct()
   {
-    $this->stmt = $conn->prepare("SELECT * FROM contacts");
-    $this->stmt->execute();
-    $this->result = $this->stmt->fetchAll();
+    $db = new DB();
+    $this->result = $db->get_all_contacts();
     $this->render();
   }
 

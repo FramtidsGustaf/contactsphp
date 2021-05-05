@@ -20,7 +20,11 @@ class Form
 
   private function update_or_add()
   {
-    $this->submit = $this->id ? "Update" : "Add";
+    if($this->id){
+      $this->submit = "Update";
+      $this->name = "value=$this->name";
+      $this->tel = "value=$this->tel";
+    } else $this->submit = "Add";
   }
 
   private function hidden_or_not()
