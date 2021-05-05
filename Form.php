@@ -41,7 +41,7 @@ class Form
     <div class='col-md-2'>
     <input type='submit' class='form-control mt-2 btn btn-primary' value='$this->submit'>
     </div>
-    $this->hidden;
+    $this->hidden
     </form>
     ";
   }

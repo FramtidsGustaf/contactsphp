@@ -20,7 +20,7 @@ class Delete
       $stmt->bindParam(':id', $this->id);
       $stmt->execute();
       header('Location: http://localhost/backend2php/contacts/');
-    }
+    } else header('Location: http://localhost/backend2php/contacts/');
   }
 }
 
