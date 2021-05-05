@@ -7,7 +7,7 @@ class DB
   private static $password = "root";
   private static $db = "contactdb";
 
-  public static function hejsan()
+  public static function conn()
   {
     try {
       $conn = new PDO("mysql:host=" . self::$servername . ";dbname=" . self::$db,  self::$username, self::$password);
