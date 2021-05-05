@@ -35,7 +35,6 @@ class DB
     VALUES (:name, :tel)");
     $stmt->bindParam(':name', $name);
     $stmt->bindParam(':tel', $tel);
-    // Kör SQL-satsen (infoga en rad)
     $stmt->execute();
     $last_id = $this->conn->lastInsertId();
     echo "<p>New record created successfully.
