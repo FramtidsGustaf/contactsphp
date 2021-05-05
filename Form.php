@@ -32,16 +32,16 @@ class Form
   {
     echo "
     <form action='#' method='post' class='row'>
-    <div class='col-md-5'>
-    <input type='text' name='name' class='form-control mt-2' $this->name>
-    </div>
-    <div class='col-md-5'>
-    <input type='text' name='tel' class='form-control mt-2' $this->tel>
-    </div>
-    <div class='col-md-2'>
-    <input type='submit' class='form-control mt-2 btn btn-primary' value='$this->submit'>
-    </div>
-    $this->hidden
+      <div class='col-md-5'>
+        <input type='text' name='name' class='form-control mt-2' $this->name>
+      </div>
+      <div class='col-md-5'>
+        <input type='text' name='tel' class='form-control mt-2' $this->tel>
+      </div>
+      <div class='col-md-2'>
+        <input type='submit' class='form-control mt-2 btn btn-primary' value='$this->submit'>
+      </div>
+      $this->hidden
     </form>
     ";
   }
